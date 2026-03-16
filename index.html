@@ -16,7 +16,9 @@
       <ul class="nav-links" role="list">
         <li><a href="#hero">Inicio</a></li>
         <li><a href="#caracteristicas">Producto</a></li>
-        <li><a href="#preguntas frecuentes">Preguntas frecuentes</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#preguntas frecuentes">Preguntas</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
       <button id="theme-toggle" aria-label="Cambiar entre modo claro y oscuro">
@@ -27,8 +29,6 @@
 
 
   <main id="main-content">
-
-    
     <section id="hero" aria-labelledby="hero-titulo">
       <div class="hero-text">
         <p class="section-label">Nuevo · 2026</p>
@@ -39,35 +39,113 @@
         </a>
       </div>
       <div class="hero-visual" role="img" aria-label="Ilustración decorativa del producto Honda Motors">
-        <img class="imagen1" src="img/moto.PNG" width="460" height="350" alt="imagen" >
+        <img class="imagen1" src="img/moto.PNG" width="460" height="350" alt="Honda Motors 300XR motocicleta principal">
       </div>
     </section>
-
-    <!-- Caracteristicas -->
+ 
+    <!-- caracteristicas -->
     <section id="caracteristicas" aria-labelledby="features-titulo">
       <p class="section-label">Características</p>
       <h2 class="section-title" id="features-titulo">Todo lo que necesitas</h2>
       <p class="section-desc">Diseñado para equipos modernos que valoran la velocidad y la claridad en cada interacción.</p>
       <ul class="features-grid" role="list">
         <li class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"><img src="img/moto2.PNG" alt="imagen del motor"></div>
+          <div class="feature-icon" aria-hidden="true"><img src="img/moto2.PNG" alt="ícono del motor"></div>
           <h3>Motor y Potencia</h3>
           <p>Motor monocilíndrico de 293cc refrigerado por aire. Carburador de alto flujo con 26 HP de potencia y torque suave en bajas revoluciones.</p>
         </li>
         <li class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"><img src="img/suspencion.PNG" width="160" height="160" alt="imagen de la suspensión"></div>
+          <div class="feature-icon" aria-hidden="true"><img src="img/suspencion.PNG" alt="ícono de suspensión"></div>
           <h3>Suspensión y Frenos</h3>
           <p>Horquilla telescópica delantera de 230 mm de recorrido y amortiguador trasero Pro-Link. Frenos de disco delantero y trasero con ABS opcional.</p>
         </li>
         <li class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"> <img src="img/diseño.PNG" width="160" height="160" alt="imagen del diseño"> </div>
+          <div class="feature-icon" aria-hidden="true"><img src="img/diseño.PNG" alt="ícono del diseño"></div>
           <h3>Diseño y Peso</h3>
           <p>Chasis de acero de doble cuna ultraligero con solo 143 kg en seco. Altura de asiento de 875 mm y depósito de 12.5 litros.</p>
         </li>
       </ul>
     </section>
+ 
+    <!-- galeria de imagenes -->
+    <section id="galeria" aria-labelledby="galeria-titulo">
+      <p class="section-label">Galería</p>
+      <h2 class="section-title" id="galeria-titulo">Galería de Imágenes</h2>
+      <p class="section-desc">Cada ángulo, cada detalle. La Honda XR 300 lista para impresionarte.</p>
+      <div class="galeria" role="list">
+        <figure class="galeria-item fade-in" role="listitem">
+          <img src="img/moto.PNG" alt="Honda XR 300 vista frontal">
+          <figcaption>Vista frontal · Honda XR 300</figcaption>
+        </figure>
+        <figure class="galeria-item fade-in" role="listitem">
+          <img src="img/moto2.PNG" alt="Motor Honda XR 300 detalle">
+          <figcaption>Motor 293cc · Alto rendimiento</figcaption>
+        </figure>
+        <figure class="galeria-item fade-in" role="listitem">
+          <img src="img/suspencion.PNG" alt="Sistema de suspensión Pro-Link">
+          <figcaption>Suspensión Pro-Link · 230 mm</figcaption>
+        </figure>
+        <figure class="galeria-item fade-in" role="listitem">
+          <img src="img/diseño.PNG" alt="Diseño y chasis de la Honda XR 300">
+          <figcaption>Chasis ultraligero · 143 kg</figcaption>
+        </figure>
+      </div>
+    </section>
+ 
+    <!-- comentarios -->
+    <section id="testimonios" aria-labelledby="testimonios-titulo">
+      <p class="section-label">Opiniones</p>
+      <h2 class="section-title" id="testimonios-titulo">Lo que dicen nuestros clientes</h2>
+      <p class="section-desc">Más de 3,000 usuarios ya eligieron la Honda XR 300 como su compañera de ruta.</p>
+      <div class="testimonios-grid" role="list">
 
-    <!--esta es la parte de preguntas Frecuentes -->
+        <article class="testimonio-card fade-in" role="listitem">
+          <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="testimonio-texto">"La mejor moto que he tenido. El motor es suave en ciudad y potente en la sierra. Totalmente recomendada."</p>
+          <div class="testimonio-autor">
+            <div class="testimonio-avatar" aria-hidden="true">
+              <img src="img/comen1.svg" alt="foto de Juan Mamani">
+            </div>
+            <div>
+              <p class="testimonio-nombre">Juan Mamani</p>
+              <p class="testimonio-lugar">Cusco, Perú</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonio-card fade-in" role="listitem">
+          <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+          <p class="testimonio-texto">"El diseño es espectacular y el servicio postventa de Honda es excelente. Muy satisfecha con mi compra."</p>
+          <div class="testimonio-autor">
+            <div class="testimonio-avatar" aria-hidden="true">
+              <img src="img/comen2.svg" alt="foto de Lucía Ccapa">
+            </div>
+            <div>
+              <p class="testimonio-nombre">Lucía Ccapa</p>
+              <p class="testimonio-lugar">Arequipa, Perú</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonio-card fade-in" role="listitem">
+          <div class="testimonio-stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+          <p class="testimonio-texto">"Consumo de combustible muy eficiente. Llevo 8,000 km sin ningún problema mecánico. Excelente inversión."</p>
+          <div class="testimonio-autor">
+            <div class="testimonio-avatar" aria-hidden="true">
+              <img src="img/comen1 (2).svg" alt="foto de Raúl Paredes">
+            </div>
+            <div>
+              <p class="testimonio-nombre">Raúl Paredes</p>
+              <p class="testimonio-lugar">Lima, Perú</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+ 
+ 
+    <!--  preguntas frecuentes -->
     <section id="preguntas frecuentes" aria-labelledby="faq-titulo">
       <p class="section-label">Preguntas</p>
       <h2 class="section-title" id="faq-titulo">Preguntas frecuentes</h2>
@@ -75,52 +153,67 @@
       <div class="faq-list">
         <details>
           <summary>¿Cuál es el precio y hay opciones de financiamiento?</summary>
-          <p>El precio de la Honda XR 300 varía según el concesionario y el país, pero generalmente se encuentra entre <strong>$4,500 y $5,800 USD</strong>. Honda ofrece planes de financiamiento a través de sus concesionarios oficiales con cuotas mensuales accesibles, con y sin entrada inicial. Consulta tu tienda más cercana para las promociones vigentes.</p>
+          <p>El precio de la Honda XR 300 varía según el concesionario y el país, pero generalmente se encuentra entre <strong>$4,500 y $5,800 USD</strong>. Honda ofrece planes de financiamiento a través de sus concesionarios oficiales con cuotas mensuales accesibles, con y sin entrada inicial.</p>
         </details>
         <details>
           <summary>¿Qué garantía incluye la Honda XR 300?</summary>
-          <p>La Honda XR 300 viene con una garantía oficial de fábrica de <strong>12 meses o 12,000 km</strong> (lo que ocurra primero), cubriendo defectos de fabricación en motor, transmisión y componentes eléctricos. La garantía es válida únicamente si el mantenimiento se realiza en concesionarios autorizados Honda.</p>
+          <p>La Honda XR 300 viene con una garantía oficial de fábrica de <strong>12 meses o 12,000 km</strong> (lo que ocurra primero), cubriendo defectos de fabricación en motor, transmisión y componentes eléctricos.</p>
         </details>
         <details>
           <summary>¿Dónde puedo comprar la Honda XR 300?</summary>
-          <p>Puedes adquirirla en cualquier <strong>concesionario oficial Honda</strong> de tu país. También puedes ubicar el punto de venta más cercano ingresando a <a href="https://www.honda.com" target="_blank" rel="noopener noreferrer">honda.com</a> y usando el localizador de distribuidores. Evita compras informales para garantizar la autenticidad y la garantía del producto.</p>
+          <p>Puedes adquirirla en cualquier <strong>concesionario oficial Honda</strong>. Visita <a href="https://www.honda.com" target="_blank" rel="noopener noreferrer">honda.com</a> y usa el localizador de distribuidores para encontrar el punto de venta más cercano.</p>
         </details>
       </div>
     </section>
-
+ 
   </main>
 
   <!--  esto es el FOOTER -->
   <footer id="contacto">
     <div class="footer-inner">
       <div class="footer-brand">
-        <strong style="font-family:'Syne',sans-serif;font-size:1.2rem;">Honda<span style="color:var(--accent)">Motors</span></strong>
+        <strong>Honda<span style="color:var(--accent)">Motors</span></strong>
         <p>hondamotors@gmail.com</p>
       </div>
-
-      <!-- redes sociales  -->
+ 
+      <!-- redes sociales -->
       <nav aria-label="Redes sociales">
         <ul class="social-links" role="list">
           <li>
-            <a href="https://www.facebook.com/HondaMotosPeru/" target="_blank" rel="noopener noreferrer"
-               aria-label="Visitar NovaPulse en Twitter (abre en nueva pestaña)"><i class="social-links-icon"></i><img src="img/facebook.svg" alt="icono de facebook"></a>
+            <a href="https://www.facebook.com/HondaMotosPeru/" target="_blank" 
+               aria-label="Visitar Honda Motors en Facebook (abre en nueva pestaña)">
+              <img src="img/facebook.svg" alt="Facebook">
+            </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/hondamotosperuoficial/" target="_blank" rel="noopener noreferrer"
-               aria-label="Visitar NovaPulse en GitHub (abre en nueva pestaña)"><i class="social-links-icon"><img src="img/instagram.svg" width="35" height="35" alt="icono de instagram"></i></a>
+            <a href="https://www.instagram.com/hondamotosperuoficial/" target="_blank" 
+               aria-label="Visitar Honda Motors en Instagram (abre en nueva pestaña)">
+              <img src="img/instagram.svg" width="35" height="35" alt="Instagram">
+            </a>
           </li>
           <li>
-            <a href="https://www.tiktok.com/@honda?lang=es" rel="noopener noreferrer"
-               aria-label="Visitar NovaPulse en LinkedIn (abre en nueva pestaña)"><i class="social-links-icon"><img src="img/tik-tok.svg" width="35" height="35" alt="icono de tiktok"></i></a>
+            <a href="https://www.tiktok.com/@honda?lang=es" target="_blank" 
+               aria-label="Visitar Honda Motors en TikTok (abre en nueva pestaña)">
+              <img src="img/tik-tok.svg" width="35" height="35" alt="TikTok">
+            </a>
           </li>
         </ul>
       </nav>
-
+ 
+      <!-- terminos y Condiciones  -->
+      <div class="footer-legal" aria-label="Términos y condiciones">
+        <p>Términos y Condiciones</p>
+        <a href="#">Términos de uso</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Aviso legal</a>
+        <a href="#">Cookies</a>
+      </div>
+ 
       <p class="footer-copy">© 2026 Rayder Muñoz. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <!-- ══════════════ esto es el script Modo oscuro ══════════════ -->
+  <!-- esto es el script Modo oscuro -->
   <script>
     const toggle = document.getElementById('theme-toggle');
     const html   = document.documentElement;
@@ -143,8 +236,5 @@
     }
   </script>
 
-</body>
-</html>
-    
 </body>
 </html>
