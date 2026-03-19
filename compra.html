@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compra — Honda Motors</title>
+  <link rel="icon" type="image/PNG" href="img/moto.PNG">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-sidebar">
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="nav-logo" aria-label="Honda Motors - Ir al inicio">Honda<span>Motors</span></a>
+      <button id="theme-toggle" aria-label="Cambiar entre modo claro y oscuro">
+        <span aria-hidden="true"></span> Modo oscuro
+      </button>
+    </div>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="testimonios.html">Testimonios</a></li>
+      <li><a href="compra.html" class="active" aria-current="page">Comprar</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════ Pasos para compra ══════════════ -->
+  <aside aria-label="Pasos del proceso de compra">
+    <p class="sidebar-title">Proceso de compra</p>
+
+    <ol class="steps-list" aria-label="Pasos de compra">
+      <li class="step-item done" aria-label="Paso 1 completado: Selección">
+        <div class="step-num" aria-hidden="true">✓</div>
+        <div class="step-info">
+          <span class="step-label">Selección</span>
+          <span class="step-desc">Elige tu modelo</span>
+        </div>
+      </li>
+      <li class="step-item active" aria-label="Paso 2 actual: Opciones">
+        <div class="step-num" aria-hidden="true">2</div>
+        <div class="step-info">
+          <span class="step-label">Opciones</span>
+          <span class="step-desc">Color y accesorios</span>
+        </div>
+      </li>
+      <li class="step-item" aria-label="Paso 3 pendiente: Envío">
+        <div class="step-num" aria-hidden="true">3</div>
+        <div class="step-info">
+          <span class="step-label">Envío</span>
+          <span class="step-desc">Forma de entrega</span>
+        </div>
+      </li>
+      <li class="step-item" aria-label="Paso 4 pendiente: Pago">
+        <div class="step-num" aria-hidden="true">4</div>
+        <div class="step-info">
+          <span class="step-label">Pago</span>
+          <span class="step-desc">Método de pago</span>
+        </div>
+      </li>
+      <li class="step-item" aria-label="Paso 5 pendiente: Confirmación">
+        <div class="step-num" aria-hidden="true">5</div>
+        <div class="step-info">
+          <span class="step-label">Confirmación</span>
+          <span class="step-desc">Resumen final</span>
+        </div>
+      </li>
+    </ol>
+
+    <div class="sidebar-price" aria-label="Resumen de precio">
+      <p>Precio base</p>
+      <div class="price-val" id="precio-display">$5,200 USD</div>
+      <p class="price-sub">o desde $145/mes con financiamiento</p>
+    </div>
+  </aside>
+
+  <!-- ══════════════ main ══════════════ -->
+  <main id="main-content">
+    <p class="section-label">Proceso de compra</p>
+    <h1 style="font-size:clamp(1.6rem,3vw,2rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:0.3rem;">
+      Honda XR 300 — Configura tu moto
+    </h1>
+    <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:0;">
+      Personaliza tu compra y recibe tu Honda en la puerta de tu casa.
+    </p>
+
+    <div class="compra-grid">
+
+      <!-- Resumen del producto -->
+      <section class="producto-card" aria-labelledby="producto-titulo">
+        <h2 id="producto-titulo">Resumen del producto</h2>
+
+        <img class="producto-img" src="img/moto.PNG" alt="Honda XR 300 motocicleta">
+
+        <p class="producto-nombre">Honda XR 300</p>
+        <p class="producto-desc">Motor monocilíndrico 293cc, 26 HP, suspensión Pro-Link, chasis ultraligero 143 kg. Lista para ciudad y aventura.</p>
+
+        <dl class="producto-specs">
+          <div class="spec-item">
+            <dt>Motor</dt>
+            <dd>293cc</dd>
+          </div>
+          <div class="spec-item">
+            <dt>Potencia</dt>
+            <dd>26 HP</dd>
+          </div>
+          <div class="spec-item">
+            <dt>Peso</dt>
+            <dd>143 kg</dd>
+          </div>
+          <div class="spec-item">
+            <dt>Depósito</dt>
+            <dd>12.5 L</dd>
+          </div>
+        </dl>
+
+        <!-- Selector de color -->
+        <div class="color-selector">
+          <label id="color-label">Color: <strong id="color-nombre">Rojo Honda</strong></label>
+          <div class="color-options" role="group" aria-labelledby="color-label">
+            <button class="color-btn selected" style="background:#e2000f;" data-color="Rojo Honda"  aria-label="Rojo Honda"  title="Rojo Honda"></button>
+            <button class="color-btn"          style="background:#111111;" data-color="Negro Mate"  aria-label="Negro Mate"  title="Negro Mate"></button>
+            <button class="color-btn"          style="background:#c0c0c0;" data-color="Gris Plata"  aria-label="Gris Plata"  title="Gris Plata"></button>
+            <button class="color-btn"          style="background:#1a3a6e;" data-color="Azul Marino" aria-label="Azul Marino" title="Azul Marino"></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formulario de compra -->
+      <section class="form-card" aria-labelledby="form-titulo">
+        <h2 id="form-titulo">Datos de entrega</h2>
+
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Mamani" autocomplete="name" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="correo@email.com" autocomplete="email">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="ciudad">Ciudad / Departamento</label>
+          <select id="ciudad" name="ciudad">
+            <option value="">Selecciona tu ciudad</option>
+            <option value="Lima">Lima</option>
+            <option value="Cusco">Cusco</option>
+            <option value="Arequipa">Arequipa</option>
+            <option value="Trujillo">Trujillo</option>
+            <option value="Puno">Puno</option>
+            <option value="Huancayo">Huancayo</option>
+            <option value="Otra">Otra ciudad</option>
+          </select>
+        </div>
+
+        <!-- Opciones de envío -->
+        <fieldset style="border:none;">
+          <legend style="font-size:0.8rem;font-weight:700;margin-bottom:0.6rem;">Forma de entrega</legend>
+          <div class="envio-options" id="envio-options" role="radiogroup" aria-label="Opciones de envío">
+            <label class="envio-option">
+              <input type="radio" name="envio" value="concesionario" checked aria-label="Recoger en concesionario">
+              <div class="envio-option-info">
+                <span class="envio-option-label">Recoger en concesionario</span>
+                <span class="envio-option-desc">Disponible en 3-5 días hábiles</span>
+              </div>
+              <span class="envio-option-price">Gratis</span>
+            </label>
+            <label class="envio-option">
+              <input type="radio" name="envio" value="domicilio" aria-label="Entrega a domicilio">
+              <div class="envio-option-info">
+                <span class="envio-option-label">Entrega a domicilio</span>
+                <span class="envio-option-desc">Disponible en 5-10 días hábiles</span>
+              </div>
+              <span class="envio-option-price">+$80</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Método de pago -->
+        <fieldset style="border:none;">
+          <legend style="font-size:0.8rem;font-weight:700;margin-bottom:0.6rem;">Método de pago</legend>
+          <div class="pago-options" id="pago-options" role="group" aria-label="Métodos de pago">
+            <button type="button" class="pago-btn selected" data-pago="Contado"           aria-pressed="true">Contado</button>
+            <button type="button" class="pago-btn"          data-pago="Financiamiento"     aria-pressed="false">Financiamiento</button>
+            <button type="button" class="pago-btn"          data-pago="Tarjeta de crédito" aria-pressed="false">Tarjeta</button>
+            <button type="button" class="pago-btn"          data-pago="Transferencia"      aria-pressed="false">Transferencia</button>
+          </div>
+        </fieldset>
+      </section>
+
+      <!-- Botones de accion -->
+      <div class="acciones">
+        <button type="button" class="btn-comprar"
+          onclick="alert('¡Solicitud enviada! Nos contactaremos contigo pronto.')">
+          Confirmar pedido 
+        </button>
+
+        <!-- Botón WhatsApp con mensaje dinámico -->
+        <a id="btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer"
+           class="btn-whatsapp" aria-label="Comprar por WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Comprar por WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ══════════════ Footer ══════════════ -->
+  <footer id="contacto">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>Honda<span style="color:var(--accent)">Motors</span></strong>
+        <p>hondamotors@gmail.com</p>
+      </div>
+      <ul class="footer-links" role="list" aria-label="Enlaces legales">
+        <li><a href="#">Términos de uso</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 Rayder Muñoz. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════ scripts ══════════════ -->
+  <script>
+    /* ── Modo oscuro ── */
+    const toggle = document.getElementById('theme-toggle');
+    const html   = document.documentElement;
+    const saved  = localStorage.getItem('theme');
+    if (saved) applyTheme(saved);
+
+    toggle.addEventListener('click', () => {
+      applyTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+
+    function applyTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      toggle.innerHTML = theme === 'dark'
+        ? '<span aria-hidden="true"></span> Modo claro'
+        : '<span aria-hidden="true"></span> Modo oscuro';
+    }
+
+    /* ── Estado de la compra ── */
+    let selectedColor = 'Rojo Honda';
+    let selectedEnvio = 'Recogida en concesionario';
+    let selectedPago  = 'Contado';
+
+    /* ── Selector de color ── */
+    document.querySelectorAll('.color-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        selectedColor = btn.dataset.color;
+        document.getElementById('color-nombre').textContent = selectedColor;
+        updateWhatsApp();
+      });
+    });
+
+    /* ── Selector de envío ── */
+    document.querySelectorAll('input[name="envio"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        selectedEnvio = radio.value === 'domicilio'
+          ? 'Entrega a domicilio (+$80)'
+          : 'Recogida en concesionario';
+        updateWhatsApp();
+      });
+    });
+
+    /* ── Selector de pago ── */
+    document.querySelectorAll('.pago-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.pago-btn').forEach(b => {
+          b.classList.remove('selected');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('selected');
+        btn.setAttribute('aria-pressed', 'true');
+        selectedPago = btn.dataset.pago;
+        updateWhatsApp();
+      });
+    });
+
+    /* ── Actualizar enlace WhatsApp con mensaje dinámico ── */
+    function updateWhatsApp() {
+      const nombre  = document.getElementById('nombre').value.trim() || 'cliente';
+      const ciudad  = document.getElementById('ciudad').value || 'sin especificar';
+      const mensaje = `Hola, soy ${nombre} de ${ciudad}. Me interesa la Honda XR 300 en color ${selectedColor}. Envío: ${selectedEnvio}. Pago: ${selectedPago}.`;
+      document.getElementById('btn-whatsapp').href =
+        `https://wa.me/51999999999?text=${encodeURIComponent(mensaje)}`;
+    }
+
+    /* ── Escuchar cambios en nombre y ciudad ── */
+    ['nombre', 'ciudad'].forEach(id => {
+      document.getElementById(id).addEventListener('input', updateWhatsApp);
+    });
+
+    /* ── Inicializar enlace WhatsApp ── */
+    updateWhatsApp();
+  </script>
+
+</body>
+</html>

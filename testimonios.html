@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonios — Honda Motors</title>
+  <link rel="icon" type="image/PNG" href="img/moto.PNG">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-sidebar">
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="nav-logo" aria-label="Honda Motors - Ir al inicio">Honda<span>Motors</span></a>
+      <button id="theme-toggle" aria-label="Cambiar entre modo claro y oscuro">
+        <span aria-hidden="true"></span> Modo oscuro
+      </button>
+    </div>
+  </header>
+
+  <nav aria-label="Navegación principal">
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="testimonios.html" class="active" aria-current="page">Testimonios</a></li>
+      <li><a href="compra.html">Comprar</a></li>
+    </ul>
+  </nav>
+
+  <aside aria-label="Filtros de testimonios">
+    <p class="sidebar-title">Filtros</p>
+
+    <!-- Filtrar por categoría -->
+    <div class="sidebar-section">
+      <h3>Filtrar por categoría</h3>
+      <ul class="filter-list" role="list" aria-label="Filtros por categoría">
+        <li><label><input type="checkbox" class="filtro-categoria" value="Motor"       checked aria-label="Filtrar por Motor">       Motor</label></li>
+        <li><label><input type="checkbox" class="filtro-categoria" value="Diseño"      checked aria-label="Filtrar por Diseño">      Diseño</label></li>
+        <li><label><input type="checkbox" class="filtro-categoria" value="Rendimiento" checked aria-label="Filtrar por Rendimiento"> Rendimiento</label></li>
+        <li><label><input type="checkbox" class="filtro-categoria" value="Servicio"    checked aria-label="Filtrar por Servicio">    Servicio</label></li>
+        <li><label><input type="checkbox" class="filtro-categoria" value="Precio"      checked aria-label="Filtrar por Precio">      Precio</label></li>
+      </ul>
+    </div>
+
+    <!-- Filtrar por Calificación -->
+    <div class="sidebar-section">
+      <h3>Calificación</h3>
+      <ul class="filter-list" role="list" aria-label="Filtros por calificación">
+        <li><label><input type="checkbox" class="filtro-estrellas" value="5" checked aria-label="5 estrellas"> ★★★★★</label></li>
+        <li><label><input type="checkbox" class="filtro-estrellas" value="4" checked aria-label="4 estrellas"> ★★★★☆</label></li>
+        <li><label><input type="checkbox" class="filtro-estrellas" value="3" checked aria-label="3 estrellas"> ★★★☆☆</label></li>
+      </ul>
+    </div>
+
+    <!-- Contador de resultados -->
+    <div class="sidebar-section">
+      <h3>Resultados</h3>
+      <p id="contador-resultados" style="font-size:0.85rem;color:var(--text-muted);">
+        Mostrando <strong id="num-visibles">10</strong> de <strong>10</strong> opiniones
+      </p>
+    </div>
+
+    <!-- Distribucion de puntuacion -->
+    <div class="sidebar-section">
+      <h3>Puntuación general</h3>
+      <div class="sidebar-stat" aria-label="Distribución de calificaciones">
+        <div>
+          <div class="stat-row"><span>5 ★</span><span>70%</span></div>
+          <div class="stat-bar-wrap"><div class="stat-bar" style="width:70%" role="presentation"></div></div>
+        </div>
+        <div>
+          <div class="stat-row"><span>4 ★</span><span>20%</span></div>
+          <div class="stat-bar-wrap"><div class="stat-bar" style="width:20%" role="presentation"></div></div>
+        </div>
+        <div>
+          <div class="stat-row"><span>3 ★</span><span>10%</span></div>
+          <div class="stat-bar-wrap"><div class="stat-bar" style="width:10%" role="presentation"></div></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ══════════════ Main ══════════════ -->
+  <main id="main-content">
+    <div class="main-header">
+      <p class="section-label">Opiniones verificadas</p>
+      <h1>Lo que dicen nuestros riders</h1>
+      <p>Más de 3,000 usuarios ya eligieron la Honda XR 300 como su compañera de ruta.</p>
+    </div>
+
+    <!-- Mensaje cuando no hay resultados -->
+    <div id="sin-resultados" style="display:none; padding:2rem; text-align:center; color:var(--text-muted); font-size:0.95rem;">
+      Seleccione un filtro.
+    </div>
+
+    <div class="testimonios-grid is-grid" id="grid-testimonios" role="list">
+
+      <!-- 1 -->
+      <article class="testimonio-card fade-in"
+               data-categoria="Motor" data-estrellas="5" role="listitem">
+        <span class="testimonio-badge">Motor</span>
+        <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <p class="testimonio-texto">"La mejor moto que he tenido. El motor es suave en ciudad y potente en la sierra. Totalmente recomendada."</p>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar" aria-hidden="true">
+            <img src="img/comen1.svg" alt="foto de Juan Mamani">
+          </div>
+          <div>
+            <p class="testimonio-nombre">Juan Mamani</p>
+            <p class="testimonio-lugar">Cusco, Perú</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="testimonio-card fade-in"
+               data-categoria="Diseño" data-estrellas="5" role="listitem">
+        <span class="testimonio-badge">Diseño</span>
+        <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <p class="testimonio-texto">"El diseño es espectacular y el servicio postventa de Honda es excelente. Muy satisfecha con mi compra."</p>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar" aria-hidden="true">
+            <img src="img/comen2.svg" alt="foto de Lucía Ccapa">
+          </div>
+          <div>
+            <p class="testimonio-nombre">Lucía Ccapa</p>
+            <p class="testimonio-lugar">Arequipa, Perú</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="testimonio-card fade-in"
+               data-categoria="Rendimiento" data-estrellas="4" role="listitem">
+        <span class="testimonio-badge">Rendimiento</span>
+        <div class="testimonio-stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+        <p class="testimonio-texto">"Consumo de combustible muy eficiente. Llevo 8,000 km sin ningún problema mecánico. Excelente inversión."</p>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar" aria-hidden="true">
+            <img src="img/comen1 (2).svg" alt="foto de Raúl Paredes">
+          </div>
+          <div>
+            <p class="testimonio-nombre">Raúl Paredes</p>
+            <p class="testimonio-lugar">Lima, Perú</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="testimonio-card fade-in"
+               data-categoria="Motor" data-estrellas="5" role="listitem">
+        <span class="testimonio-badge">Motor</span>
+        <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <p class="testimonio-texto">"Subí la carretera Cusco-Puno sin problemas. El motor respondió perfecto en altura. Increíble experiencia en cada curva."</p>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar" aria-hidden="true">CM</div>
+          <div>
+            <p class="testimonio-nombre">Carlos Mamani</p>
+            <p class="testimonio-lugar">Puno, Perú</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="testimonio-card fade-in"
+               data-categoria="Precio" data-estrellas="5" role="listitem">
+        <span class="testimonio-badge">Precio</span>
+        <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <p class="testimonio-texto">"Excelente relación calidad-precio. El financiamiento fue rápido y las cuotas muy accesibles. Valió cada sol."</p>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar" aria-hidden="true">SV</div>
+          <div>
+            <p class="testimonio-nombre">Sandra Vargas</p>
+            <p class="testimonio-lugar">Trujillo, Perú</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="testimonio-card fade-in"
+               data-categoria="Servicio" data-estrellas="4" role="listitem">
+        <span class="testimonio-badge">Servicio</span>
+        <div class="testimonio-stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+        <p class="testimonio-texto">"El concesionario fue muy atento. La entrega fue rápida y me explicaron todo sobre el mantenimiento desde el primer día."</p>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar" aria-hidden="true">MQ</div>
+          <div>
+            <p class="testimonio-nombre">Miguel Quispe</p>
+            <p class="testimonio-lugar">Huancayo, Perú</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 7 -->
+      <article class="testimonio-card fade-in"
+               data-categoria="Rendimiento" data-estrellas="5" role="listitem">
+        <span class="testimonio-badge">Rendimiento</span>
+        <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <p class="testimonio-texto">"Uso la moto todos los días para el trabajo. Ya llevo 12,000 km y no ha fallado ni una sola vez. Confiable al 100%."</p>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar" aria-hidden="true">AT</div>
+          <div>
+            <p class="testimonio-nombre">Andrés Torres</p>
+            <p class="testimonio-lugar">Ica, Perú</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8 -->
+      <article class="testimonio-card fade-in"
+               data-categoria="Diseño" data-estrellas="4" role="listitem">
+        <span class="testimonio-badge">Diseño</span>
+        <div class="testimonio-stars" aria-label="4 de 5 estrellas">★★★★☆</div>
+        <p class="testimonio-texto">"El color rojo Honda es impresionante. La gente siempre me pregunta por la moto. El chasis es elegante y muy ligero."</p>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar" aria-hidden="true">VH</div>
+          <div>
+            <p class="testimonio-nombre">Valeria Huanca</p>
+            <p class="testimonio-lugar">Tacna, Perú</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9 -->
+      <article class="testimonio-card fade-in"
+               data-categoria="Precio" data-estrellas="3" role="listitem">
+        <span class="testimonio-badge">Precio</span>
+        <div class="testimonio-stars" aria-label="3 de 5 estrellas">★★★☆☆</div>
+        <p class="testimonio-texto">"Buena moto en general, aunque el precio me pareció un poco alto comparado con otras opciones. El rendimiento sí lo justifica."</p>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar" aria-hidden="true">RB</div>
+          <div>
+            <p class="testimonio-nombre">Ricardo Benites</p>
+            <p class="testimonio-lugar">Piura, Perú</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="testimonio-card fade-in"
+               data-categoria="Servicio" data-estrellas="5" role="listitem">
+        <span class="testimonio-badge">Servicio</span>
+        <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <p class="testimonio-texto">"El soporte técnico de Honda es excepcional. Tuve un pequeño problema con el faro y lo resolvieron el mismo día sin costo."</p>
+        <div class="testimonio-autor">
+          <div class="testimonio-avatar" aria-hidden="true">EC</div>
+          <div>
+            <p class="testimonio-nombre">Elena Chávez</p>
+            <p class="testimonio-lugar">Chiclayo, Perú</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ══════════════ footer ══════════════ -->
+  <footer id="contacto">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>Honda<span style="color:var(--accent)">Motors</span></strong>
+        <p>hondamotors@gmail.com</p>
+      </div>
+      <ul class="footer-links" role="list" aria-label="Enlaces legales">
+        <li><a href="#">Términos de uso</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Cookies</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 Rayder Muñoz. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════ scripts ══════════════ -->
+  <script>
+    /* ── Modo oscuro ── */
+    const toggle = document.getElementById('theme-toggle');
+    const html   = document.documentElement;
+    const saved  = localStorage.getItem('theme');
+    if (saved) applyTheme(saved);
+
+    toggle.addEventListener('click', () => {
+      applyTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+
+    function applyTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      toggle.innerHTML = theme === 'dark'
+        ? '<span aria-hidden="true"></span> Modo claro'
+        : '<span aria-hidden="true"></span> Modo oscuro';
+    }
+
+    /* ══════════════ FILTROS ══════════════ */
+    const cards         = document.querySelectorAll('.testimonio-card');
+    const checksCat     = document.querySelectorAll('.filtro-categoria');
+    const checksEst     = document.querySelectorAll('.filtro-estrellas');
+    const numVisibles   = document.getElementById('num-visibles');
+    const sinResultados = document.getElementById('sin-resultados');
+    const grid          = document.getElementById('grid-testimonios');
+
+    function aplicarFiltros() {
+      // Categorías activas
+      const catActivas = Array.from(checksCat)
+        .filter(c => c.checked)
+        .map(c => c.value);
+
+      // Estrellas activas
+      const estActivas = Array.from(checksEst)
+        .filter(c => c.checked)
+        .map(c => c.value);
+
+      let visibles = 0;
+
+      cards.forEach(card => {
+        const cat = card.dataset.categoria;
+        const est = card.dataset.estrellas;
+
+        const mostrar = catActivas.includes(cat) && estActivas.includes(est);
+
+        if (mostrar) {
+          card.style.display = '';
+          visibles++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Actualizar contador
+      numVisibles.textContent = visibles;
+
+      // Mostrar mensaje si no hay resultados
+      sinResultados.style.display = visibles === 0 ? 'block' : 'none';
+      grid.style.display          = visibles === 0 ? 'none'  : '';
+    }
+
+    // Escuchar cambios en todos los checkboxes
+    checksCat.forEach(c => c.addEventListener('change', aplicarFiltros));
+    checksEst.forEach(c => c.addEventListener('change', aplicarFiltros));
+
+    // Aplicar al cargar la página
+    aplicarFiltros();
+  </script>
+
+</body>
+</html>

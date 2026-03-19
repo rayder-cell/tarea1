@@ -6,10 +6,10 @@
     <title>Honda Motors</title>
     <link rel="icon" type="image/PNG" href="img/moto.PNG">
     <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  
-   <!-- barra de navegacion -->
+    </head>
+<body class="page-index">
+
+  <!-- ══════════════ NAVEGACIÓN ══════════════ -->
   <header>
     <nav aria-label="Navegación principal">
       <a href="#" class="nav-logo" aria-label="Honda Motors - Ir al inicio">Honda<span>Motors</span></a>
@@ -17,8 +17,9 @@
         <li><a href="#hero">Inicio</a></li>
         <li><a href="#caracteristicas">Producto</a></li>
         <li><a href="#galeria">Galería</a></li>
-        <li><a href="#testimonios">Testimonios</a></li>
         <li><a href="#preguntas frecuentes">Preguntas</a></li>
+        <li><a href="testimonios.html">Ver todos los testimonios</a></li>
+        <li><a href="compra.html">Comprar</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
       <button id="theme-toggle" aria-label="Cambiar entre modo claro y oscuro">
@@ -29,6 +30,8 @@
 
 
   <main id="main-content">
+
+    <!-- ══════════════ HERO ══════════════ -->
     <section id="hero" aria-labelledby="hero-titulo">
       <div class="hero-text">
         <p class="section-label">Nuevo · 2026</p>
@@ -42,8 +45,8 @@
         <img class="imagen1" src="img/moto.PNG" width="460" height="350" alt="Honda Motors 300XR motocicleta principal">
       </div>
     </section>
- 
-    <!-- caracteristicas -->
+
+    <!-- ══════════════ CARACTERÍSTICAS ══════════════ -->
     <section id="caracteristicas" aria-labelledby="features-titulo">
       <p class="section-label">Características</p>
       <h2 class="section-title" id="features-titulo">Todo lo que necesitas</h2>
@@ -66,8 +69,8 @@
         </li>
       </ul>
     </section>
- 
-    <!-- galeria de imagenes -->
+
+    <!-- ══════════════ GALERÍA ══════════════ -->
     <section id="galeria" aria-labelledby="galeria-titulo">
       <p class="section-label">Galería</p>
       <h2 class="section-title" id="galeria-titulo">Galería de Imágenes</h2>
@@ -91,61 +94,8 @@
         </figure>
       </div>
     </section>
- 
-    <!-- comentarios -->
-    <section id="testimonios" aria-labelledby="testimonios-titulo">
-      <p class="section-label">Opiniones</p>
-      <h2 class="section-title" id="testimonios-titulo">Lo que dicen nuestros clientes</h2>
-      <p class="section-desc">Más de 3,000 usuarios ya eligieron la Honda XR 300 como su compañera de ruta.</p>
-      <div class="testimonios-grid" role="list">
 
-        <article class="testimonio-card fade-in" role="listitem">
-          <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="testimonio-texto">"La mejor moto que he tenido. El motor es suave en ciudad y potente en la sierra. Totalmente recomendada."</p>
-          <div class="testimonio-autor">
-            <div class="testimonio-avatar" aria-hidden="true">
-              <img src="img/comen1.svg" alt="foto de Juan Mamani">
-            </div>
-            <div>
-              <p class="testimonio-nombre">Juan Mamani</p>
-              <p class="testimonio-lugar">Cusco, Perú</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="testimonio-card fade-in" role="listitem">
-          <div class="testimonio-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="testimonio-texto">"El diseño es espectacular y el servicio postventa de Honda es excelente. Muy satisfecha con mi compra."</p>
-          <div class="testimonio-autor">
-            <div class="testimonio-avatar" aria-hidden="true">
-              <img src="img/comen2.svg" alt="foto de Lucía Ccapa">
-            </div>
-            <div>
-              <p class="testimonio-nombre">Lucía Ccapa</p>
-              <p class="testimonio-lugar">Arequipa, Perú</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="testimonio-card fade-in" role="listitem">
-          <div class="testimonio-stars" aria-label="4 de 5 estrellas">★★★★☆</div>
-          <p class="testimonio-texto">"Consumo de combustible muy eficiente. Llevo 8,000 km sin ningún problema mecánico. Excelente inversión."</p>
-          <div class="testimonio-autor">
-            <div class="testimonio-avatar" aria-hidden="true">
-              <img src="img/comen1 (2).svg" alt="foto de Raúl Paredes">
-            </div>
-            <div>
-              <p class="testimonio-nombre">Raúl Paredes</p>
-              <p class="testimonio-lugar">Lima, Perú</p>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
- 
- 
-    <!--  preguntas frecuentes -->
+    <!-- ══════════════ FAQ ══════════════ -->
     <section id="preguntas frecuentes" aria-labelledby="faq-titulo">
       <p class="section-label">Preguntas</p>
       <h2 class="section-title" id="faq-titulo">Preguntas frecuentes</h2>
@@ -165,42 +115,41 @@
         </details>
       </div>
     </section>
- 
+
   </main>
 
-  <!--  esto es el FOOTER -->
+  <!-- ══════════════ footer ══════════════ -->
   <footer id="contacto">
     <div class="footer-inner">
       <div class="footer-brand">
         <strong>Honda<span style="color:var(--accent)">Motors</span></strong>
         <p>hondamotors@gmail.com</p>
       </div>
- 
-      <!-- redes sociales -->
+
       <nav aria-label="Redes sociales">
         <ul class="social-links" role="list">
           <li>
-            <a href="https://www.facebook.com/HondaMotosPeru/" target="_blank" 
+            <a href="https://www.facebook.com/HondaMotosPeru/" target="_blank" rel="noopener noreferrer"
                aria-label="Visitar Honda Motors en Facebook (abre en nueva pestaña)">
               <img src="img/facebook.svg" alt="Facebook">
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/hondamotosperuoficial/" target="_blank" 
+            <a href="https://www.instagram.com/hondamotosperuoficial/" target="_blank" rel="noopener noreferrer"
                aria-label="Visitar Honda Motors en Instagram (abre en nueva pestaña)">
               <img src="img/instagram.svg" width="35" height="35" alt="Instagram">
             </a>
           </li>
           <li>
-            <a href="https://www.tiktok.com/@honda?lang=es" target="_blank" 
+            <a href="https://www.tiktok.com/@honda?lang=es" target="_blank" rel="noopener noreferrer"
                aria-label="Visitar Honda Motors en TikTok (abre en nueva pestaña)">
               <img src="img/tik-tok.svg" width="35" height="35" alt="TikTok">
             </a>
           </li>
         </ul>
       </nav>
- 
-      <!-- terminos y Condiciones  -->
+
+      <!-- terminos y condiciones -->
       <div class="footer-legal" aria-label="Términos y condiciones">
         <p>Términos y Condiciones</p>
         <a href="#">Términos de uso</a>
@@ -208,17 +157,16 @@
         <a href="#">Aviso legal</a>
         <a href="#">Cookies</a>
       </div>
- 
+
       <p class="footer-copy">© 2026 Rayder Muñoz. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <!-- esto es el script Modo oscuro -->
+  <!-- ══════════════ Modo oscuro ══════════════ -->
   <script>
     const toggle = document.getElementById('theme-toggle');
     const html   = document.documentElement;
 
-    // Recordar preferencia
     const saved = localStorage.getItem('theme');
     if (saved) applyTheme(saved);
 
